@@ -1,43 +1,84 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
     list-style: none;
+    margin: 20px 0px;
+
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
     font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
+
+.navbar ul li a{
+
     text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    color: rgb(75, 74, 74);
+    padding: 8px 25px;
+    transition: all .5s ease;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.navbar ul li a:hover{
+
+    background-color: rgb(174, 169, 248);
+    color: black;
+    box-shadow: 0 0 10px white;
 }
 
-ul.posts li {
-    list-style: none;
+#home {
+
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(174, 169, 248);
+    height: 600px; 
+    justify-content: center;
+    align-items: right;
+    color:rgb(75, 74, 74);
+
+}
+
+
+#home::before{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('drone.jpg') no-repeat center/cover;
+    height: 900;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(75, 74, 74);
+    align-items: center;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+
 }
