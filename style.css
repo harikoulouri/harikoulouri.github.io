@@ -153,3 +153,61 @@ img {
       margin-left: auto;
       margin-right: auto;
   }
+
+
+  /* publications sections */
+
+#publications{
+
+
+  background-color: rgb(174, 169, 248);
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+
+/* SECTION projects */
+
+#projects{
+
+  background-color: white;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#list{
+
+  background-color: white;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact{
+
+  background-color: rgb(174, 169, 248);
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
