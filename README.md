@@ -1,2 +1,2 @@
-# hari.github.io
+# harikoulouri.github.io
 personal web site
