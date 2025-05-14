@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #16a085;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .section.active {
+            display: block;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .mars-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Personal CV</h1>
+            <p>Welcome to my professional portfolio</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="about">About Me</a></li>
+                <li><a href="#" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#" class="nav-link" data-section="mars">About Mars</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <h2>Welcome to My CV Website</h2>
+            <p>Hello! I'm a passionate professional with diverse skills and experience.</p>
+            <p>Use the navigation menu above to explore different sections of my CV.</p>
+        </section>
+        
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I'm a dedicated professional with expertise in various fields. My journey has taken me through different industries, allowing me to develop a unique perspective and skill set.</p>
+            <p>When I'm not working, I enjoy exploring new technologies, reading about space exploration, and contributing to open-source projects.</p>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2>Professional Experience</h2>
+            <h3>Senior Developer - Tech Solutions Inc. (2020-Present)</h3>
+            <p>Leading a team of developers to create innovative software solutions for clients worldwide.</p>
+            
+            <h3>Software Engineer - Digital Innovations (2017-2020)</h3>
+            <p>Developed and maintained web applications using modern JavaScript frameworks.</p>
+            
+            <h3>Junior Developer - Startup Ventures (2015-2017)</h3>
+            <p>Assisted in building and testing new software products in a fast-paced environment.</p>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <h3>Master's in Computer Science - University of Technology (2013-2015)</h3>
+            <p>Specialized in Artificial Intelligence and Machine Learning.</p>
+            
+            <h3>Bachelor's in Software Engineering - State University (2009-2013)</h3>
+            <p>Graduated with honors. Thesis on "Optimizing Algorithms for Distributed Systems".</p>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>JavaScript (React, Angular, Node.js)</li>
+                <li>Python (Django, Flask)</li>
+                <li>Database Management (SQL, MongoDB)</li>
+                <li>Cloud Computing (AWS, Azure)</li>
+                <li>DevOps and CI/CD</li>
+            </ul>
+            
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Team Leadership</li>
+                <li>Problem Solving</li>
+                <li>Effective Communication</li>
+                <li>Project Management</li>
+            </ul>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <h3>E-commerce Platform (2022)</h3>
+            <p>Developed a full-stack e-commerce solution with React frontend and Node.js backend.</p>
+            
+            <h3>AI-powered Chatbot (2021)</h3>
+            <p>Created a natural language processing chatbot for customer service applications.</p>
+            
+            <h3>Open Source Contributions</h3>
+            <p>Regular contributor to several open-source projects on GitHub.</p>
+        </section>
+        
+        <!-- Mars Section -->
+        <section id="mars" class="section">
+            <h2>About Mars</h2>
+            <img src="https://mars.nasa.gov/system/resources/detail_files/7808_global-color-views-mars-PIA00407-full2.jpg" alt="Mars surface" class="mars-image">
+            <p>Mars, often called the "Red Planet," has captivated human imagination for centuries. As the fourth planet from the Sun, Mars is a cold desert world with a thin atmosphere.</p>
+            
+            <h3>Key Facts About Mars</h3>
+            <ul>
+                <li>Diameter: 6,779 km (about half the size of Earth)</li>
+                <li>Length of Day: 24.6 hours (similar to Earth)</li>
+                <li>Length of Year: 687 Earth days</li>
+                <li>Average Temperature: -62°C (-80°F)</li>
+                <li>Moons: 2 (Phobos and Deimos)</li>
+            </ul>
+            
+            <h3>Exploration of Mars</h3>
+            <p>Mars has been extensively explored by robotic spacecraft, including orbiters, landers, and rovers. Notable missions include:</p>
+            <ul>
+                <li>NASA's Perseverance Rover (2021-present)</li>
+                <li>NASA's Curiosity Rover (2012-present)</li>
+                <li>ESA's Mars Express (2003-present)</li>
+                <li>NASA's InSight Lander (2018-2022)</li>
+            </ul>
+            
+            <h3>Future of Mars Exploration</h3>
+            <p>Human missions to Mars are being planned by space agencies and private companies. The challenges include the long journey time (6-9 months), radiation exposure, and creating sustainable habitats on the Martian surface.</p>
+            <p>Mars remains the most likely candidate for future human colonization in our solar system, with its day/night cycle similar to Earth's and evidence of past water activity.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Personal CV. All rights reserved.</p>
+            <p>Contact: email@example.com | GitHub: harikoulouri</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all navigation links
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Add click event listeners to each link
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links and sections
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    document.querySelectorAll('.section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Show the corresponding section
+                    const sectionId = this.getAttribute('data-section');
+                    document.getElementById(sectionId).classList.add('active');
+                });
+            });
+            
+            // Optional: Handle initial page load with hash in URL
+            if (window.location.hash) {
+                const sectionId = window.location.hash.substring(1);
+                const correspondingLink = document.querySelector(`.nav-link[data-section="${sectionId}"]`);
+                if (correspondingLink) {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    document.querySelectorAll('.section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    
+                    correspondingLink.classList.add('active');
+                    document.getElementById(sectionId).classList.add('active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
